@@ -32,7 +32,7 @@ markdownToHtml('# h1', function(html) {
 * https://github.com/jmcmanus/pagedown-extra
 * http://bramp.github.io/js-sequence-diagrams
 * http://adrai.github.io/flowchart.js
-* http://math.stackexchange.com
+* http://www.mathjax.org
 * https://stackedit.io
 
 ## LICENSE
