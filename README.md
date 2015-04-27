@@ -51,6 +51,6 @@ but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
-Leanote destop app is licensed under the GPL v2.
+Leanote Markdown to Html is licensed under the GPL v2.
 
 [LICENSE](https://github.com/leanote/markdown-to-html/blob/master/LICENSE)
