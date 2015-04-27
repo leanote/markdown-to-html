@@ -6,9 +6,9 @@ Parse markdown to html. Support for Markdown-extra(tables, definition lists, fen
 ```
 <script src="markdown-to-html.min.js"></script>
 <script>
-var markdown = ` #h1
-#h2
-#h3
+var markdown = `# h1
+# h2
+# h3
 `;
 // 1. Parse markdown to id="content" dom
 markdownToHtml(markdown, document.getElementById('content'));
@@ -19,20 +19,21 @@ markdownToHtml(markdown, document.getElementById('content'), function(html) {
 });
 
 // 3. Just get the html
-markdownToHtml('#h1', function(html) {
+markdownToHtml('# h1', function(html) {
   console.log(html);
 });
 
 </script>
 ```
 
-Thanks for :
+## Thanks for
 
 * PageDown, the Markdown library used by Stack Overflow
 * https://github.com/jmcmanus/pagedown-extra
-* http://bramp.github.io/js-sequence-diagrams/
-* http://adrai.github.io/flowchart.js/
-* https://stackedit.io/
+* http://bramp.github.io/js-sequence-diagrams
+* http://adrai.github.io/flowchart.js
+* http://math.stackexchange.com
+* https://stackedit.io
 
 ## LICENSE
 
