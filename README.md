@@ -3,7 +3,7 @@
 Parse markdown to html. Support for Markdown-extra(tables, definition lists, fenced code blocks, footnotes, table of contents), Latex, UML diagrams.
 
 ## How to use it
-```html
+```javascript
 <script src="markdown-to-html.min.js"></script>
 <script>
 var markdown = `# h1
