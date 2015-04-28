@@ -26,7 +26,7 @@ markdownToHtml('# h1', function(html) {
 </script>
 ```
 
-## Thanks for
+## Thanks to
 
 * PageDown, the Markdown library used by Stack Overflow
 * https://github.com/jmcmanus/pagedown-extra
