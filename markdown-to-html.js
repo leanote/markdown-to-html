@@ -111,6 +111,20 @@ listStr=addAnchors(listStr);listStr=listStr.replace(/\n{2,}(?=\\x03)/,"\n");list
 		        });
 		    });
 		}
+		
+		// email & todolist
+	        converter.hooks.chain("postConversion", function(text) {
+	            // email
+	            text = text.replace(/<(mailto\:)?([^\s>]+@[^\s>]+\.\S+?)>/g, function(match, mailto, email) {
+	                return '<a href="mailto:' + email + '">' + email + '</a>';
+	            });
+	            // todolist
+	            text = text.replace(/<li>(<p>)?\[([ xX]?)\] /g, function(matched, p, b) {
+	                p || (p = '');
+	                return !(b == 'x' || b == 'X') ? '<li class="m-todo-item m-todo-empty">' + p + '<input type="checkbox" /> ' : '<li class="m-todo-item m-todo-done">' + p + '<input type="checkbox" checked /> '
+	            });
+	            return text;
+	        });
 
 		Markdown.Extra.init(converter, extraOptions);
 	}
