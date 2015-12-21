@@ -37,7 +37,7 @@ markdownToHtml('# h1', function(html) {
 
 ## LICENSE
 
-LEANOTE - NOT JUST A NOTEBOOK!
+LEANOTE - NOT JUST A NOTEPAD!
 
 Copyright 2015 by the contributors.
 
